@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Pixelator : NSObject
+@interface Pixelator : NSObject {
+	NSImage *imputImage;
+	NSImage *outputImage;
+}
+
+@property (strong) IBOutlet NSImage *inputImage;
+@property (readonly) IBOutlet NSImage *outputImage;
 
 @end

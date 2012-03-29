@@ -10,6 +10,8 @@
 		4CF8F4421523E0670089F76A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF8F4411523E0670089F76A /* Cocoa.framework */; };
 		4CF8F44C1523E0670089F76A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8F44A1523E0670089F76A /* InfoPlist.strings */; };
 		4CF8F4501523E0670089F76A /* Pixelator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8F44F1523E0670089F76A /* Pixelator.m */; };
+		4CF8F45C1523E2870089F76A /* NSImage+CGImageConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF8F45A1523E2870089F76A /* NSImage+CGImageConversion.h */; };
+		4CF8F45D1523E2870089F76A /* NSImage+CGImageConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8F45B1523E2870089F76A /* NSImage+CGImageConversion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,11 +20,13 @@
 		4CF8F4441523E0670089F76A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4CF8F4451523E0670089F76A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4CF8F4461523E0670089F76A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4CF8F4491523E0670089F76A /* Pixelator-Info.plist */ = {isa = PBXFileReference; path = "Pixelator-Info.plist"; sourceTree = "<group>"; };
+		4CF8F4491523E0670089F76A /* Pixelator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pixelator-Info.plist"; sourceTree = "<group>"; };
 		4CF8F44B1523E0670089F76A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CF8F44D1523E0670089F76A /* Pixelator-Prefix.pch */ = {isa = PBXFileReference; path = "Pixelator-Prefix.pch"; sourceTree = "<group>"; };
-		4CF8F44E1523E0670089F76A /* Pixelator.h */ = {isa = PBXFileReference; path = Pixelator.h; sourceTree = "<group>"; };
+		4CF8F44D1523E0670089F76A /* Pixelator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixelator-Prefix.pch"; sourceTree = "<group>"; };
+		4CF8F44E1523E0670089F76A /* Pixelator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pixelator.h; sourceTree = "<group>"; };
 		4CF8F44F1523E0670089F76A /* Pixelator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pixelator.m; sourceTree = "<group>"; };
+		4CF8F45A1523E2870089F76A /* NSImage+CGImageConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+CGImageConversion.h"; sourceTree = "<group>"; };
+		4CF8F45B1523E2870089F76A /* NSImage+CGImageConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+CGImageConversion.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 		4CF8F4471523E0670089F76A /* Pixelator */ = {
 			isa = PBXGroup;
 			children = (
+				4CF8F45A1523E2870089F76A /* NSImage+CGImageConversion.h */,
+				4CF8F45B1523E2870089F76A /* NSImage+CGImageConversion.m */,
 				4CF8F44E1523E0670089F76A /* Pixelator.h */,
 				4CF8F44F1523E0670089F76A /* Pixelator.m */,
 				4CF8F4481523E0670089F76A /* Supporting Files */,
@@ -100,6 +106,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF8F45C1523E2870089F76A /* NSImage+CGImageConversion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF8F4501523E0670089F76A /* Pixelator.m in Sources */,
+				4CF8F45D1523E2870089F76A /* NSImage+CGImageConversion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +240,7 @@
 		4CF8F4541523E0670089F76A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -246,6 +255,7 @@
 		4CF8F4551523E0670089F76A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -276,6 +286,7 @@
 				4CF8F4551523E0670089F76A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

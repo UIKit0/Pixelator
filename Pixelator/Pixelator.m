@@ -10,4 +10,6 @@
 
 @implementation Pixelator
 
+@synthesize inputImage, outputImage;
+
 @end
