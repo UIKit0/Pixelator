@@ -1,3 +1,7 @@
 This framework contains a class for pixelating images. Takes an input image, processes it based on several properties, and produces an output image.
 
-More to come...
+Properties include the shape of the resulting pixels and background shown between pixels. You may notice typedefs indicating future features- feel free to implement these or wait for me to get around to it.
+
+This is all licensed under GPLv3 but you can contact me for other licensing terms if you require a different license.
+
+Enjoy!

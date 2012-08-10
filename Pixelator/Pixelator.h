@@ -5,6 +5,10 @@
 //  Created by Shon Frazier on 3/28/12.
 //  Copyright (c) 2012 Fyrestead. All rights reserved.
 //
+//  Licensed under GPLv3 - see LICENSE in project root
+//  Other licensing arrangements availbale by contacting
+//  the author
+//
 
 #import <Foundation/Foundation.h>
 #import "AttributeBezierPath.h"
