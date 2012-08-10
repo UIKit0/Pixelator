@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CDAF54815D54254006A4A5E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4CDAF54715D54254006A4A5E /* LICENSE */; };
+		4CDAF54B15D544B0006A4A5E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDAF54915D544B0006A4A5E /* Quartz.framework */; };
+		4CDAF54C15D544B0006A4A5E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDAF54A15D544B0006A4A5E /* QuartzCore.framework */; };
+		4CDAF54F15D54CAC006A4A5E /* AttributeBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDAF54D15D54CAC006A4A5E /* AttributeBezierPath.h */; };
+		4CDAF55015D54CAC006A4A5E /* AttributeBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDAF54E15D54CAC006A4A5E /* AttributeBezierPath.m */; };
 		4CF8F4421523E0670089F76A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF8F4411523E0670089F76A /* Cocoa.framework */; };
 		4CF8F44C1523E0670089F76A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8F44A1523E0670089F76A /* InfoPlist.strings */; };
 		4CF8F4501523E0670089F76A /* Pixelator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8F44F1523E0670089F76A /* Pixelator.m */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CDAF54715D54254006A4A5E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4CDAF54915D544B0006A4A5E /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4CDAF54A15D544B0006A4A5E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4CDAF54D15D54CAC006A4A5E /* AttributeBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeBezierPath.h; sourceTree = "<group>"; };
+		4CDAF54E15D54CAC006A4A5E /* AttributeBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeBezierPath.m; sourceTree = "<group>"; };
 		4CF8F43E1523E0670089F76A /* Pixelator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pixelator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF8F4411523E0670089F76A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4CF8F4441523E0670089F76A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -36,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDAF54B15D544B0006A4A5E /* Quartz.framework in Frameworks */,
+				4CDAF54C15D544B0006A4A5E /* QuartzCore.framework in Frameworks */,
 				4CF8F4421523E0670089F76A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +58,7 @@
 		4CF8F4321523E0670089F76A = {
 			isa = PBXGroup;
 			children = (
+				4CDAF54715D54254006A4A5E /* LICENSE */,
 				4CF8F45E1523E9420089F76A /* README */,
 				4CF8F4471523E0670089F76A /* Pixelator */,
 				4CF8F4401523E0670089F76A /* Frameworks */,
@@ -65,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				4CF8F4411523E0670089F76A /* Cocoa.framework */,
+				4CDAF54915D544B0006A4A5E /* Quartz.framework */,
+				4CDAF54A15D544B0006A4A5E /* QuartzCore.framework */,
 				4CF8F4431523E0670089F76A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -85,6 +100,8 @@
 			children = (
 				4CF8F45A1523E2870089F76A /* NSImage+CGImageConversion.h */,
 				4CF8F45B1523E2870089F76A /* NSImage+CGImageConversion.m */,
+				4CDAF54D15D54CAC006A4A5E /* AttributeBezierPath.h */,
+				4CDAF54E15D54CAC006A4A5E /* AttributeBezierPath.m */,
 				4CF8F44E1523E0670089F76A /* Pixelator.h */,
 				4CF8F44F1523E0670089F76A /* Pixelator.m */,
 				4CF8F4481523E0670089F76A /* Supporting Files */,
@@ -110,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF8F45C1523E2870089F76A /* NSImage+CGImageConversion.h in Headers */,
+				4CDAF54F15D54CAC006A4A5E /* AttributeBezierPath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +185,7 @@
 			files = (
 				4CF8F44C1523E0670089F76A /* InfoPlist.strings in Resources */,
 				4CF8F45F1523E9420089F76A /* README in Resources */,
+				4CDAF54815D54254006A4A5E /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +198,7 @@
 			files = (
 				4CF8F4501523E0670089F76A /* Pixelator.m in Sources */,
 				4CF8F45D1523E2870089F76A /* NSImage+CGImageConversion.m in Sources */,
+				4CDAF55015D54CAC006A4A5E /* AttributeBezierPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

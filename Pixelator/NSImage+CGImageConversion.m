@@ -49,7 +49,7 @@ static void BitmapReleaseCallback( void* info, const void* data, size_t size ) {
 
 - (CGImageRef) cgImage {
 	NSBitmapImageRep*	bm = [self bitmap]; // data provider will release this
-	int					rowBytes, width, height;
+	NSInteger			rowBytes, width, height;
 	
 	rowBytes = [bm bytesPerRow];
 	width = [bm pixelsWide];
